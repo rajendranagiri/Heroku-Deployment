@@ -7,7 +7,7 @@ os.chdir('D:/DATA_SCIENCE/DEPLOYMENT/Heroku-Demo-master')
 app = Flask(__name__)
 
 model = pickle.load(open('model_new.pkl', 'rb'))
-
+#
 @app.route('/')
 def home():
     return render_template('index.html')
